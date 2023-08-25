@@ -48,7 +48,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
 
-        TD1: tap_dance_1 {
+        td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "JOIN/EXPLODE/FILLET";
             #binding-cells = <0>;
@@ -56,7 +56,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F13>,  <&kp F14>;
         };
 
-        TD2: tap_dance_2 {
+        td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY";
             #binding-cells = <0>;
@@ -64,7 +64,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F15>,  <&kp F16>;
         };
 
-        TD3: tap_dance_3 {
+        td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "Rotate, Rotate3D";
             #binding-cells = <0>;
@@ -72,7 +72,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F17>,  <&kp F18>;
         };
 
-        TD4: tap_dance_4 {
+        td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "Join, Explode";
             #binding-cells = <0>;
@@ -80,7 +80,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F19>,  <&kp F20>;
         };
 
-        TD5: tap_dance_5 {
+        td5: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "Zoom Window, Zoom Selected";
             #binding-cells = <0>;
@@ -88,7 +88,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F21>,  <&kp F22>;
         };
 
-        TD6: tap_dance_6 {
+        td6: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "Hide, Show";
             #binding-cells = <0>;
@@ -96,7 +96,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp F23>,  <&kp F24>;
         };
 
-        TD7: tap_dance_7 {
+        td7: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
             label = "SELLAST/ISOLATE";
             #binding-cells = <0>;
@@ -104,7 +104,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F1))>, <&kp LC(LS(F2))>;
         };
 
-        TD8: tap_dance_8 {
+        td8: tap_dance_8 {
             compatible = "zmk,behavior-tap-dance";
             label = "Offset, Offset Srf";
             #binding-cells = <0>;
@@ -112,7 +112,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F3))>, <&kp LC(LS(F4))>;
         };
 
-        TD9: tap_dance_9 {
+        td9: tap_dance_9 {
             compatible = "zmk,behavior-tap-dance";
             label = "Join, Explode";
             #binding-cells = <0>;
@@ -120,7 +120,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F5))>, <&kp LC(LS(F6))>;
         };
 
-        TD10: tap_dance_10 {
+        td10: tap_dance_10 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -128,7 +128,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F7))>, <&kp LC(LS(F8))>;
         };
         
-        TD11: tap_dance_11 {
+        td11: tap_dance_11 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -136,7 +136,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F9))>, <&kp LC(LS(F10))>;
         };
 
-        TD12: tap_dance_12 {
+        td12: tap_dance_12 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -144,14 +144,14 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F11))>, <&kp LC(LS(F12))>;
         };
 
-        TD13: tap_dance_13 {
+        td13: tap_dance_13 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F13))>, <&kp LC(LS(F14))>;
 
-        TD14: tap_dance_14 {
+        td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
             label = "Isolate, ";
             #binding-cells = <0>;
@@ -159,7 +159,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F15))>, <&kp LC(LS(F16))>;
         };
 
-        TD15: tap_dance_15 {
+        td15: tap_dance_15 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -167,7 +167,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F17))>, <&kp LC(LS(F18))>;
         };
 
-        TD16: tap_dance_16 {
+        td16: tap_dance_16 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -175,7 +175,7 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(LS(F19))>, <&kp LC(LS(F20))>;
         };
 
-        TD17: tap_dance_17 {
+        td17: tap_dance_17 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
             #binding-cells = <0>;
@@ -193,19 +193,19 @@ nice_view_spi: &spi0 {
 
      /*
     * ,----------------------------------.                      
-    * | ESC  | TAB  | TD1  | TD2  | DEL  |                      
+    * | ESC  | TAB  | td1  | td2  | DEL  |                      
     * `------+------+------+------+------`                      
-    *        | TD3  | TD4  | TD5  |                           
+    *        | td3  | td4  | td5  |                           
     * ,------+------+------+------+------,  
-    * | SHFT | CTRL | TD6  |  L2  |  L3  |  
+    * | SHFT | CTRL | td6  |  L2  |  L3  |  
     * `----------------------------------'  
     */                                        
 
              bindings = <   
 
-             &kp ESC         &kp TAB              &TD1            &TD2             &kp DEL
-                             &TD3                 &TD4            &TD5                                    
-             &kp LSHIFT      &kp CTRL             &TD6            &mo LAYERTWO     &tog NUMPAD 
+             &kp ESC         &kp TAB              &td1            &td2             &kp DEL
+                             &td3                 &td4            &td5                                    
+             &kp LSHIFT      &kp CTRL             &td6            &mo LAYERTWO     &tog NUMPAD 
              >;
              
         };
@@ -214,19 +214,19 @@ nice_view_spi: &spi0 {
 
     /*
     * ,----------------------------------.                      
-    * | ESC  | TD7  | TD8  | TD9  | TD10 |                      
+    * | ESC  | td7  | td8  | td9  | td10 |                      
     * `------+------+------+------+------`                      
-    *        | TD11 | TD12 | TD13 |                           
+    *        | td11 | td12 | td13 |                           
     * ,------+------+------+------+------,  
-    * | TD14 | TD15 | TD16 |  L2  | TD17 |  
+    * | td14 | td15 | td16 |  L2  | td17 |  
     * `----------------------------------'          
     */                                        
 
              bindings = <   
 
-             &kp ESC       &TD7          &TD8            &TD9            &kp TD16
-                           &TD10         &TD11           &TD12                                    
-             &kp TD13      &TD14         &TD15           &mo LAYERONE    &TD17
+             &kp ESC       &td7          &td8            &td9            &kp td16
+                           &td10         &td11           &td12                                    
+             &kp td13      &td14         &td15           &mo LAYERONE    &td17
              >;
         };
 
