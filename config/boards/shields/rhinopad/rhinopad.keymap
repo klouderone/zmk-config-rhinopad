@@ -205,7 +205,7 @@ nice_view_spi: &spi0 {
 
              &kp ESC         &kp TAB              &TD1            &TF2             &kp DEL
                              &TD3                 &TD4            &TD5                                    
-             &kp LSHIFT      &kp CTRL             &TD6            &mo LAYERONE     &tog NUMPAD 
+             &kp LSHIFT      &kp CTRL             &TD6            &mo LAYERTWO     &tog NUMPAD 
              >;
              
         };
