@@ -182,16 +182,16 @@ nice_view_spi: &spi0 {
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F21))>, <&kp LC(LS(F22))>;
         };
-        };
     };
+};
 
     keymap {
 
         compatible = "zmk,keymap";
 
-    default_layer {
+        default_layer {
 
-     /*
+    /*
     * ,----------------------------------.                      
     * | ESC  | TAB  | td1  | td2  | DEL  |                      
     * `------+------+------+------+------`                      
@@ -205,8 +205,8 @@ nice_view_spi: &spi0 {
 
              &kp ESC         &kp TAB              &td1            &td2             &kp DEL
                              &td3                 &td4            &td5                                    
-             &kp LSHIFT      &kp CTRL             &td6            &mo LAYERTWO     &tog NUMPAD 
-             >;
+             &kp LSHIFT      &kp CTRL             &td6            &mo 1            &tog 2 
+             >; 
              
         };
 
