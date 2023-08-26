@@ -201,7 +201,7 @@ nice_view_spi: &spi0 {
              &kp LSHIFT      &td3                 &td6            &mo 1            &tog 2 
              >; 
              
-                sensor-bindings = <&encoder LC(Z) LC(Y)>;
+                sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
 
         };
 
@@ -224,7 +224,7 @@ nice_view_spi: &spi0 {
              &td13         &td14         &td15           &none           &td17
              >;
 
-        sensor-bindings = <&encoder LC(Z) LC(Y)>;
+        sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
 
         };
 
@@ -248,8 +248,8 @@ nice_view_spi: &spi0 {
         &kp DOT      &kp N7        &kp N8        &kp N9       &tog NUMPAD
         >;
 
-        sensor-bindings = <&encoder LC(Z) LC(Y)>;
-        
+        sensor-bindings = <&inc_dec_kp LC(Z) LC(Y)>;
+
     };
 };
 };
