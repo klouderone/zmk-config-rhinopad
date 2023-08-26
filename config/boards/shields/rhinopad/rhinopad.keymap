@@ -226,7 +226,7 @@ nice_view_spi: &spi0 {
 
              &kp ESC       &td7          &td8            &td9            &kp td16
                            &td10         &td11           &td12                                    
-             &kp td13      &td14         &td15           &mo LAYERONE    &td17
+             &kp td13      &td14         &td15           &none           &td17
              >;
         };
 
