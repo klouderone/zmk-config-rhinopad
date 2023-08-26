@@ -223,6 +223,9 @@ nice_view_spi: &spi0 {
                            &td10         &td11           &td12                                    
              &td13         &td14         &td15           &none           &td17
              >;
+
+        sensor-bindings = <&encoder LC(Z) LC(Y)>;
+
         };
 
         
@@ -244,6 +247,9 @@ nice_view_spi: &spi0 {
                      &kp N4        &kp N5        &kp N6                                   
         &kp DOT      &kp N7        &kp N8        &kp N9       &tog NUMPAD
         >;
+
+        sensor-bindings = <&encoder LC(Z) LC(Y)>;
+        
     };
 };
 };
