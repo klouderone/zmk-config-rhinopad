@@ -50,7 +50,7 @@ nice_view_spi: &spi0 {
        
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "JOIN/EXPLODE/FILLET";
+            label = "Move, Mirror";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp F13>,  <&kp F14>;
