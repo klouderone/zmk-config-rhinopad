@@ -260,4 +260,4 @@ nice_view_spi: &spi0 {
 
     };
 };
-};
+
