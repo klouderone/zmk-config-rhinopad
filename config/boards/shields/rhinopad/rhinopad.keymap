@@ -149,14 +149,14 @@ nice_view_spi: &spi0 {
             label = "Isolate ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(NUMBER_0)>, <&kp LC(NUMBER_1)>;
+            bindings = <&kp LC(F5)>, <&kp LC(F6)>;
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project To CPlane";
+            label = "";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(NUMBER_2)>, <&kp LC(NUMBER_3)>;
+            bindings = <&kp LC(F7)>, <&kp LC(F8)>;
         };
 
         td15: tap_dance_15 {
@@ -164,23 +164,15 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(NUMBER_4)>, <&kp LC(NUMBER_5)>;
+            bindings = <&kp LC(F9)>, <&kp LC(F10)>;
         };
 
         td16: tap_dance_16 {
             compatible = "zmk,behavior-tap-dance";
-            label = " ";
+            label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(NUMBER_6)>, <&kp LC(NUMBER_7)>;
-        };
-
-        td17: tap_dance_17 {
-            compatible = "zmk,behavior-tap-dance";
-            label = " ";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp LC(NUMBER_8)>, <&kp LC(NUMBER_9)>;
+            bindings = <&kp LC(F11)>, <&kp LC(F12)>;
         };
     };
 };
