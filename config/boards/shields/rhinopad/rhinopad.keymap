@@ -123,7 +123,7 @@ nice_view_spi: &spi0 {
         td10: tap_dance_10 {
             compatible = "zmk,behavior-tap-dance";
             label = " ";
-            #binding-cells = <0>;_
+            #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LA(F7))>, <&kp LC(LA(F8))>;
         };
