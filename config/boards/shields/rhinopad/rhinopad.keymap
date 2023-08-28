@@ -39,13 +39,35 @@ nice_view_spi: &spi0 {
 
 / {
 
+     macros {
+        undo: undo {
+            label = "undo";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(Z)>
+                , <&macro_wait_time 500>
+                ;
+        };
+        
+        redo: redo {
+            label = "redo";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(Y)>
+                , <&macro_wait_time 500>
+                ;
+        };
+     }
+
     behaviors {
 
         rot_kp: behavior_sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_KP";
             #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&undo>, <&redo>;
         };
        
         td1: tap_dance_1 {
@@ -231,7 +253,7 @@ nice_view_spi: &spi0 {
              &td13         &td14         &td15           &none           &bootloader
              >;
 
-        sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
+        sensor-bindings = <&rot_kp>;
 
         };
 
