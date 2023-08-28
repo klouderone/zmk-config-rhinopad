@@ -193,7 +193,7 @@ nice_view_spi: &spi0 {
 
     /*
     * ,----------------------------------.                      
-    * | TAB  | ESC  | td1  | td2  | DEL  |                      
+    * | ESC  | TAB  | td1  | td2  | DEL  |                      
     * `------+------+------+------+------`                      
     *        | CTRL | td4  | td5  |                           
     * ,------+------+------+------+------,  
@@ -203,7 +203,7 @@ nice_view_spi: &spi0 {
 
              bindings = <   
 
-             &kp TAB         &kp ESC              &td1            &td2             &kp DEL
+             &kp ESC         &kp TAB              &td1            &td2             &kp DEL
                              &kp LCTRL            &td4            &td5                                    
              &kp LSHIFT      &td3                 &td6            &mo 1            &tog 2 
              >; 
