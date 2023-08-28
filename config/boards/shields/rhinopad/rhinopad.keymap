@@ -53,7 +53,7 @@ nice_view_spi: &spi0 {
             label = "Move, Mirror";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F13>,  <&kp F14>;
+            bindings = <&kp LC(LS(F1))>,  <&kp LC(LS(F2))>;
         };
 
         td2: tap_dance_2 {
@@ -61,7 +61,7 @@ nice_view_spi: &spi0 {
             label = "COPY";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F15>,  <&kp F16>;
+            bindings = <&kp LC(LS(F3))>,  <&kp LC(LS(F4))>;
         };
 
         td3: tap_dance_3 {
@@ -69,7 +69,7 @@ nice_view_spi: &spi0 {
             label = "Rotate, Rotate3D";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F17>,  <&kp F18>;
+            bindings = <&kp LC(LS(F5))>,  <&kp LC(LS(F6))>;
         };
 
         td4: tap_dance_4 {
@@ -77,7 +77,7 @@ nice_view_spi: &spi0 {
             label = "Join, Explode";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F19>,  <&kp F20>;
+            bindings = <&kp LC(LS(F7))>,  <&kp LC(LS(F8))>;
         };
 
         td5: tap_dance_5 {
@@ -85,7 +85,7 @@ nice_view_spi: &spi0 {
             label = "Zoom Window, Zoom Selected";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F21>,  <&kp F22>;
+            bindings = <&kp LC(LS(F9))>,  <&kp LC(LS(F10))>;
         };
 
         td6: tap_dance_6 {
@@ -93,7 +93,7 @@ nice_view_spi: &spi0 {
             label = "Hide, Show";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp F23>,  <&kp F24>;
+            bindings = <&kp LC(LS(F11))>,  <&kp LC(LS(F12))>;
         };
 
         td7: tap_dance_7 {
@@ -101,7 +101,7 @@ nice_view_spi: &spi0 {
             label = "SELLAST/ISOLATE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F1))>, <&kp LC(LS(F2))>;
+            bindings = <&kp LC(LA(F1))>, <&kp LC(LA(F2))>;
         };
 
         td8: tap_dance_8 {
@@ -109,7 +109,7 @@ nice_view_spi: &spi0 {
             label = "Offset, Offset Srf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F3))>, <&kp LC(LS(F4))>;
+            bindings = <&kp LC(LA(F3))>, <&kp LC(LA(F4))>;
         };
 
         td9: tap_dance_9 {
@@ -117,7 +117,7 @@ nice_view_spi: &spi0 {
             label = "Join, Explode";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F5))>, <&kp LC(LS(F6))>;
+            bindings = <&kp LC(LA(F5))>, <&kp LC(LA(F6))>;
         };
 
         td10: tap_dance_10 {
@@ -125,7 +125,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F7))>, <&kp LC(LS(F8))>;
+            bindings = <&kp LC(LA(F7))>, <&kp LC(LA(F8))>;
         };
         
         td11: tap_dance_11 {
@@ -133,7 +133,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F9))>, <&kp LC(LS(F10))>;
+            bindings = <&kp LC(LA(F9))>, <&kp LC(LA(F10))>;
         };
 
         td12: tap_dance_12 {
@@ -141,7 +141,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F11))>, <&kp LC(LS(F12))>;
+            bindings = <&kp LC(LA(F11))>, <&kp LC(LA(F12))>;
         };
 
         td13: tap_dance_13 {
@@ -149,14 +149,14 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F13))>, <&kp LC(LS(F14))>;
+            bindings = <&kp LC(N0)>, <&kp LC(N1)>;
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
             label = "Isolate, ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F15))>, <&kp LC(LS(F16))>;
+            bindings = <&kp LC(N2)>, <&kp LC(N3)>;
         };
 
         td15: tap_dance_15 {
@@ -164,7 +164,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F17))>, <&kp LC(LS(F18))>;
+            bindings = <&kp LC(N4)>, <&kp LC(N5)>;
         };
 
         td16: tap_dance_16 {
@@ -172,7 +172,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F19))>, <&kp LC(LS(F20))>;
+            bindings = <&kp LC(N6)>, <&kp LC(N7)>;
         };
 
         td17: tap_dance_17 {
@@ -180,7 +180,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F21))>, <&kp LC(LS(F22))>;
+            bindings = <&kp LC(N8)>, <&kp LC(N9)>;
         };
     };
 };
