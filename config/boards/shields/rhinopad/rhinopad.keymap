@@ -41,27 +41,11 @@ nice_view_spi: &spi0 {
 
     behaviors {
         
-        tdu: tap_dance_undo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "undo";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp LC(Z)>,  <&kp LC(Z)>, <&kp LC(Y)>;
-        };
-        
-        tdr: tap_dance_redo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "redo";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp LC(Y)>,  <&kp LC(Y)>, <&kp LC(Y)>;
-        };
-
         rot_kp: behavior_sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ENC_KP";
             #sensor-binding-cells = <2>;
-            bindings = <&tdu>, <&tdr>;
+            bindings = <&kp>, <&kp>;
         };
        
         td1: tap_dance_1 {
@@ -224,7 +208,7 @@ nice_view_spi: &spi0 {
              &kp LSHIFT      &td3                 &td6            &mo 1            &tog 2 
              >; 
              
-                sensor-bindings = <&rot_kp>;
+                sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
 
         };
 
@@ -247,7 +231,7 @@ nice_view_spi: &spi0 {
              &td13         &td14         &td15           &none           &bootloader
              >;
 
-        sensor-bindings = <&rot_kp>;
+        sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
 
         };
 
@@ -271,7 +255,7 @@ nice_view_spi: &spi0 {
         &kp DOT      &kp N7        &kp N8        &kp N9       &tog NUMPAD
         >;
 
-        sensor-bindings = <&rot_kp>;
+        sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
 
     };
 };
