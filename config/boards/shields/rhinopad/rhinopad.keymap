@@ -50,7 +50,7 @@ nice_view_spi: &spi0 {
        
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Move, Mirror";
+            label = "Move, Copy";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F1))>,  <&kp LC(LS(F2))>;
@@ -133,7 +133,7 @@ nice_view_spi: &spi0 {
             label = "UntrimSrf, ExtendSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F9))>, <&kp LC(LA(F10))>;
+            bindings = <&kp LC(LA(F9))>, <&kp LC(F6)>;
         };
 
         td12: tap_dance_12 {
@@ -149,7 +149,7 @@ nice_view_spi: &spi0 {
             label = "Isolate ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(F5)>, <&kp LC(F6)>;
+            bindings = <&kp LC(F5)>;
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
