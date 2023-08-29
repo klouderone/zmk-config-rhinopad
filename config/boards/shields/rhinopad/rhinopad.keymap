@@ -133,7 +133,7 @@ nice_view_spi: &spi0 {
             label = "UntrimSrf, ExtendSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F9))>, <&kp LC(F6)>;
+            bindings = <&kp LC(LA(F9))>, <&kp LC(F3)>;
         };
 
         td12: tap_dance_12 {
@@ -149,7 +149,7 @@ nice_view_spi: &spi0 {
             label = "Isolate ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(F5)>;
+            bindings = <&kp LC(F5)>, <&kp LC(F6)>;
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
@@ -212,7 +212,7 @@ nice_view_spi: &spi0 {
     * `------+------+------+------+------`                      
     *        |LCTAB | td11 | td12 |                           
     * ,------+------+------+------+------,  
-    * | td13 | td14 | td15 |  L2  | btl  |  
+    * |LC(F4)| td14 | td15 |  L2  | btl  |  
     * `----------------------------------'          
     */                                        
 
@@ -220,7 +220,7 @@ nice_view_spi: &spi0 {
 
              &td13           &td7          &td8            &td9            &td16
                              &kp LC(TAB)   &td11           &td12                                    
-             &kp LC(F6)      &td14         &td15           &none           &bootloader
+             &kp LC(F4)      &td14         &td15           &none           &bootloader
              >;
 
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
