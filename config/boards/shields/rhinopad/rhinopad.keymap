@@ -174,25 +174,26 @@ nice_view_spi: &spi0 {
             tapping-term-ms = <300>;
             bindings = <&kp LC(F11)>, <&kp LC(F12)>;
         };
-        
+
         copy: copy {
             compatible = "zmk,behavior-mod-morph";
             label = "copy";
             #binding-cells = <0>;
             bindings = <&td5>, <&kp LC(C)>;
             mods = <(MOD_LSFT)>;
-         };
+        };
 
-         paste: paste {
+        paste: paste {
             compatible = "zmk,behavior-mod-morph";
             label = "paste";
             #binding-cells = <0>;
             bindings = <&tog 2>, <&kp LC(V)>;
             mods = <(MOD_LSFT)>;
-         };
+        };
+    };
 };
 
-    keymap {
+keymap {
 
         compatible = "zmk,keymap";
 
@@ -265,5 +266,5 @@ nice_view_spi: &spi0 {
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
 
     };
-};
+  };
 };
