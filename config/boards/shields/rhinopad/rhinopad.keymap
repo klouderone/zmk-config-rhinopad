@@ -146,10 +146,10 @@ nice_view_spi: &spi0 {
 
         td13: tap_dance_13 {
             compatible = "zmk,behavior-tap-dance";
-            label = "ExtractSrf, DupEdge";
+            label = "ExtractSrf, DupEdge, DupBorder";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N1)>, <&kp LC(N2)>;
+            bindings = <&kp LC(N1)>, <&kp LC(N2)>, <&kp LC(N3)>;
         };
 
         td14: tap_dance_14 {
@@ -157,7 +157,7 @@ nice_view_spi: &spi0 {
             label = "Select Last, ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N3)>, <&kp LC(N4)>;
+            bindings = <&kp LC(N4)>, <&kp LC(N5)>;
         };
 
         td15: tap_dance_15 {
@@ -165,7 +165,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N5)>, <&kp LC(N6)>;
+            bindings = <&kp LC(N6)>, <&kp LC(N7)>;
         };
 
         td16: tap_dance_16 {
@@ -173,7 +173,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N7)>, <&kp LC(N8)>;
+            bindings = <&kp LC(N8)>, <&kp LC(N9)>;
         };
 
         copy: copy {
