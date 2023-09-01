@@ -58,7 +58,7 @@ nice_view_spi: &spi0 {
 
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Split, Trim";
+            label = "Split, Trim, Boolean Split";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F3)>, <&kp LC(F4)>, <&kp LC(F5)>;
@@ -66,7 +66,7 @@ nice_view_spi: &spi0 {
 
         td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "ExtrudeCrv, PlanarSrf";
+            label = "Join, Explode";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F6)>, <&kp LC(F7)>;
@@ -74,7 +74,7 @@ nice_view_spi: &spi0 {
 
         td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Join, Explode";
+            label = "Zoom Window, Zoom Selected";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F8)>, <&kp LC(F9)>;
@@ -82,7 +82,7 @@ nice_view_spi: &spi0 {
 
         td5: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Zoom Window, Zoom Selected";
+            label = "Extrude Curve, Planars";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F10)>, <&kp LC(F11)>;
@@ -98,7 +98,7 @@ nice_view_spi: &spi0 {
 
         td7: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Boolean Split, ";
+            label = "Isolate, ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F2))>, <&kp LC(LS(F3))>;
@@ -114,7 +114,7 @@ nice_view_spi: &spi0 {
 
         td9: tap_dance_9 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Hide, Show";
+            label = "Rotate, Rotate3D";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F6))>, <&kp LC(LS(F7))>;
@@ -122,7 +122,7 @@ nice_view_spi: &spi0 {
 
         td10: tap_dance_10 {
             compatible = "zmk,behavior-tap-dance";
-            label = " ";
+            label = "Hide, Show";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F8))>, <&kp LC(LS(F9))>;
@@ -130,7 +130,7 @@ nice_view_spi: &spi0 {
         
         td11: tap_dance_11 {
             compatible = "zmk,behavior-tap-dance";
-            label = "UntrimSrf, ExtendSrf";
+            label = "Offset, OffsetSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F10))>, <&kp LC(LS(F11))>;
@@ -138,26 +138,26 @@ nice_view_spi: &spi0 {
 
         td12: tap_dance_12 {
             compatible = "zmk,behavior-tap-dance";
-            label = "ExtractSrf, DupEdge";
+            label = "Untrim3D, ExtendSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F12))>, <&kp LC(LA(F1))>;
+            bindings = <&kp LC(LS(F12))>, <&kp LC(N0)>;
         };
 
         td13: tap_dance_13 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Isolate";
+            label = "ExtractSrf, DupEdge";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F2))>, <&kp LC(LA(F2))>;
+            bindings = <&kp LC(N1)>, <&kp LC(N2)>;
         };
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project CPlane";
+            label = "Select Last, ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F3))>, <&kp LC(LA(F4))>;
+            bindings = <&kp LC(N3)>, <&kp LC(N4)>;
         };
 
         td15: tap_dance_15 {
@@ -165,7 +165,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F5))>, <&kp LC(LA(F6))>;
+            bindings = <&kp LC(N5)>, <&kp LC(N6)>;
         };
 
         td16: tap_dance_16 {
@@ -173,7 +173,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LA(F7))>, <&kp LC(LA(F8))>;
+            bindings = <&kp LC(N7)>, <&kp LC(N8)>;
         };
 
         copy: copy {
@@ -229,7 +229,7 @@ keymap {
     * `------+------+------+------+------`                      
     *        |LCTAB | td12 | td13 |                           
     * ,------+------+------+------+------,  
-    * |LC(F4)| td14 | td15 |  L2  | btl  |  
+    * | td14 | td15 | td16 |  L2  | btl  |  
     * `----------------------------------'          
     */                                        
 
@@ -237,7 +237,7 @@ keymap {
 
              &td7            &td8          &td9            &td10            &td11
                              &kp LC(TAB)   &td12           &td13                                    
-             &kp LC(F4)      &td14         &td15           &none           &bootloader
+             &td14           &td15         &td16           &none           &bootloader
              >;
 
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
