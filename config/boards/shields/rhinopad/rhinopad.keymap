@@ -213,8 +213,8 @@ keymap {
              bindings = <   
 
              &kp TAB         &kp ESC              &td1            &td2             &kp DEL
-                             &kp LCTRL            &td4            &copy                                    
-             &kp LSHIFT      &td3                 &td6            &paste           &tog 2
+                             &kp LCTRL            &td3            &copy                                    
+             &kp LSHIFT      &td5                 &td6            &paste           &tog 2
              >; 
              
                 sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
@@ -235,8 +235,8 @@ keymap {
 
              bindings = <   
 
-             &td13           &td7          &td8            &td9            &td16
-                             &kp LC(TAB)   &td11           &td12                                    
+             &td7            &td8          &td9            &td10            &td11
+                             &kp LC(TAB)   &td12           &td13                                    
              &kp LC(F4)      &td14         &td15           &none           &bootloader
              >;
 
