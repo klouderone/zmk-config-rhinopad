@@ -61,7 +61,7 @@ nice_view_spi: &spi0 {
             label = "Split, Trim";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F3))>,  <&kp LC(LS(F4))>;
+            bindings = <&kp LC(LS(F3))>,  <&kp LC(LS(F4))>, <&kp LC(F1)>;
         };
 
         td3: tap_dance_3 {
@@ -150,10 +150,11 @@ nice_view_spi: &spi0 {
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F5)>, <&kp LC(F6)>;
+        };
 
         td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
-            label = "";
+            label = "Project, Project CPlane";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F7)>, <&kp LC(F8)>;
