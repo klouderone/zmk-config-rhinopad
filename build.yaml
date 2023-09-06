@@ -14,4 +14,4 @@
 ---
 include:
   - board: sparkfun_pro_micro_rp2040
-    shield: rhinopad nice_view_adapter sparkfun_pro_micro_rp2040
+    shield: rhinopad sparkfun_pro_micro_rp2040
