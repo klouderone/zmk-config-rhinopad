@@ -202,7 +202,7 @@ keymap {
 
     /*
     * ,----------------------------------.                      
-    * | TAB  | ESC  | td1  | td2  | DEL  |                      
+    * | ESC  | TAB  | td1  | td2  | DEL  |                      
     * `------+------+------+------+------`                      
     *        | CTRL | td3  | td4  |                           
     * ,------+------+------+------+------,  
@@ -212,7 +212,7 @@ keymap {
 
              bindings = <   
 
-             &kp TAB         &kp ESC              &td1            &td2             &kp DEL
+             &kp ESC         &kp TAB              &td1            &td2             &kp DEL
                              &kp LCTRL            &td3            &copy                                    
              &kp LSHIFT      &td5                 &td6            &paste           &tog 2
              >; 
