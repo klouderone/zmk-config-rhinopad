@@ -106,7 +106,7 @@ nice_view_spi: &spi0 {
 
     td8: tap_dance_8 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Rotate, Rotate3D";
+            label = "BooleanUnion, CurveBoolean";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(LS(F4))>, <&kp LC(LS(F5))>;
