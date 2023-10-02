@@ -36,6 +36,7 @@ nice_view_spi: &spi0 {
 #define LAYERZERO 0
 #define LAYERTWO 1
 #define NUMPAD 2
+#define BLUETOOTH
 
 / {
 
@@ -237,7 +238,7 @@ nice_view_spi: &spi0 {
 
         &td7            &td8          &td9            &td10            &td11
                         &kp LC(TAB)   &td12           &td13                                    
-        &td14           &td15         &td16           &none           &bootloader
+        &td14           &td15         &td16           &none           &tog BLUETOOTH
         >;
 
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
@@ -267,5 +268,28 @@ nice_view_spi: &spi0 {
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
 
     };
+
+    BLUETOOTH {
+
+    /*
+    * ,----------------------------------.                      
+    * | CLEAR|      |      |      |BTLDR |                      
+    * `------+------+------+------+------`                      
+    *        | PF1  | PF2  | PF3  |                           
+    * ,------+------+------+------+------,  
+    * |      |      |      |      | L-BT |  
+    * `----------------------------------'          
+    */                                        
+
+    bindings = <   
+
+        &bt BT_CLR      &none         &none           &none            &bootloader
+                        &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2                                   
+        &none           &none         &none           &none            &tog BLUETOOTH
+        >;
+
+        sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
+
+        };
   };
 };
