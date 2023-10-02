@@ -36,7 +36,7 @@ nice_view_spi: &spi0 {
 #define LAYERZERO 0
 #define LAYERTWO 1
 #define NUMPAD 2
-#define BLUETOOTH
+#define BLUETOOTH 3 
 
 / {
 
