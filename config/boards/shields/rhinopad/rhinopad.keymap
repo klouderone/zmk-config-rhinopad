@@ -269,7 +269,7 @@ nice_view_spi: &spi0 {
 
     };
 
-    BLUETOOTH {
+    layer_bluetooth {
 
     /*
     * ,----------------------------------.                      
