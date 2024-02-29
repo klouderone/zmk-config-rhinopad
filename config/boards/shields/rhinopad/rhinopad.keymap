@@ -142,7 +142,7 @@ nice_view_spi: &spi0 {
             label = "Untrim3D, ExtendSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(F12))>, <&kp LC(N0)>, LC(LS(A))>;
+            bindings = <&kp LC(LS(F12))>, <&kp LC(N0)>, <&kp LC(LS(A))>;
         };
 
     td13: tap_dance_13 {
@@ -158,7 +158,7 @@ nice_view_spi: &spi0 {
             label = "Select Last, ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N4)>, <&kp LC(N5)>, LC(LS(B));
+            bindings = <&kp LC(N4)>, <&kp LC(N5)>, <&kp LC(LS(B))>;
         };
 
     td15: tap_dance_15 {
@@ -166,7 +166,7 @@ nice_view_spi: &spi0 {
             label = " ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N6)>, <&kp LC(N7)>, LC(LS(C));
+            bindings = <&kp LC(N6)>, <&kp LC(N7)>, <&kp LC(LS(C))>;
         };
 
     td16: tap_dance_16 {
@@ -174,7 +174,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(N8)>, <&kp LC(N9)>, LC(LS(D));
+            bindings = <&kp LC(N8)>, <&kp LC(N9)>, <&kp LC(LS(D))>;
         };
 
     copy: copy {
