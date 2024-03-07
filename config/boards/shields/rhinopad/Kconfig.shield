@@ -1,2 +1,2 @@
 config SHIELD_RHINOPAD
-    def_bool $(shields_list_contains, rhinopad)
+    def_bool $(shields_list_contains,rhinopad)
